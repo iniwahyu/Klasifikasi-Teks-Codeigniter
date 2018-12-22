@@ -14,42 +14,69 @@
   <div class="content-wrapper">
     <div class="container">        
       <!-- Main content -->
-      <section class="content">
-        <div class="box box-primary box-solid">
-          <div class="box-header">
-            <h3 class="box-title">Form Check
-            </h3>
-          </div>
-          <!-- /.box-header -->
-          <div class="box-body pad">
-            <?php echo form_open('home/prosesklasifikasi', array('id' => 'form')); ?>
-              <textarea class="textarea" name="klasifikasi" placeholder="Place some text here" style="width: 100%; height: 400px; -size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; resize:none;"></textarea>
-              <?php 
-              if(form_error('klasifikasi'))
-              {
-                echo '<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>';
-                echo '<script>swal({
-                                title: "'. form_error('klasifikasi') .'",
-                                text: "'. form_error('klasifikasi') .'",
-                                icon: "error",
-                                button: "Aww yiss!",
-                              });
-                      </script>';
-              }
-              ?>
-          </div>
-        </div>
-        
+      <section class="content">        
         <div class="row">
-          <div class="col-sm-5"></div>
-          <div class="col-sm-2">
-            <button type="submit" class="btn btn-primary btn-block">SUBMIT</button>
-            <?php echo form_close(); ?>
-          </div>
-          <div class="col-sm-5"></div>
+            <div class="col-md-12">
+                <div class="alert alert-danger">
+                    <h4>Selamat Datang</h4>
+                    CekKlas adalah Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, enim repellendus? Soluta molestias maiores, facere ea ipsam dignissimos vel? Blanditiis laudantium recusandae voluptatibus earum voluptates repellat in, voluptate quo illum!
+                </div>
+            </div>
+            <!-- /.col -->
+
+            <div class="col-md-4 col-sm-6">
+                <div class="info-box">
+                    <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">History Hari Ini</span>
+                        <span class="info-box-number">
+                            <?php
+                            date_default_timezone_set('Asia/Jakarta');
+                            $date = date('Y-m-d');
+                            $history = $this->db->get('history');
+                            echo $history->num_rows();
+                            ?>
+                        </span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+            </div>
+            <!-- AKHIR COL -->
+
+            <div class="col-md-4 col-sm-6">
+                <div class="info-box">
+                    <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">History</span>
+                        <span class="info-box-number">
+                            <?php
+                            $history = $this->db->get('history');
+                            echo $history->num_rows();
+                            ?>
+                        </span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+            </div>
+            <!-- AKHIR COL -->
+
+            <div class="col-md-4 col-sm-6">
+                <div class="info-box">
+                    <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">History</span>
+                        <span class="info-box-number">
+                            <?php
+                            $history = $this->db->get('history');
+                            echo $history->num_rows();
+                            ?>
+                        </span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+            </div>
+            <!-- AKHIR COL -->
         </div>
-        
-        <!-- /.col-->
       </section>
       <!-- /.content -->
     </div>
