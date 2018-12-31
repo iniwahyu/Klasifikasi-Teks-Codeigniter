@@ -15,28 +15,19 @@
     <div class="container">        
       <!-- Main content -->
       <section class="content">
+        <div class="alert bg-light-blue">
+            <h4>Klasifikasi Kata Pornografi</h4>
+            Untuk menggunakan <b>Klasifikasi Kata Pornografi</b>, mohon salin artikel yang ingin diambil lalu tempel ke dalam form yang sudah tersedia. Pilih tombol <b>Submit</b> untuk melakukan pengecekan apakah artikel yang dipilih <b>LAYAK</b> atau <b class="text-black">TIDAK LAYAK</b>.
+        </div>
         <div class="box box-primary box-solid">
           <div class="box-header">
-            <h3 class="box-title">Form Check
-            </h3>
+            <h3 class="box-title">Klasifikasi Kata Pornografi</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body pad">
             <?php echo form_open('home/prosesklasifikasi', array('id' => 'form')); ?>
-              <textarea class="textarea" name="klasifikasi" placeholder="Place some text here" style="width: 100%; height: 400px; -size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; resize:none;"></textarea>
-              <?php 
-              if(form_error('klasifikasi'))
-              {
-                echo '<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>';
-                echo '<script>swal({
-                                title: "'. form_error('klasifikasi') .'",
-                                text: "'. form_error('klasifikasi') .'",
-                                icon: "error",
-                                button: "Aww yiss!",
-                              });
-                      </script>';
-              }
-              ?>
+              <textarea class="textarea" name="klasifikasi" placeholder="Tempelkan Artikel disini" style="width: 100%; height: 400px; -size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; resize:none;"></textarea>
+              <?php echo form_error('klasifikasi'); ?>
           </div>
         </div>
         
@@ -65,10 +56,7 @@
 <?php $this->load->view('home/include/js'); ?>
 <script>
   $(function () {
-    // Replace the <textarea id="editor1"> with a CKEditor
-    // instance, using default configuration.
     // CKEDITOR.replace('editor1')
-    //bootstrap WYSIHTML5 - text editor
     $('.textarea').wysihtml5()
   })
 

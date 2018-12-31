@@ -7,3 +7,4 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['klasifikasi'] = 'Home/klasifikasi';
 $route['hasil'] = 'Home/hasil';
+$route['about'] = 'Home/about';

@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="<?php echo base_url('/klasifikasi'); ?>">Klasifikasi</a></li>
-            <li><a href="<?php echo base_url('/'); ?>">About</a></li>
+            <li><a href="<?php echo base_url('/about'); ?>">About</a></li>
           </ul>
         </div>
 

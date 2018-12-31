@@ -14,6 +14,11 @@ class Home extends CI_Controller {
 		$this->load->view('Home/index');
 	}
 
+	public function about()
+	{
+		$this->load->view('Home/about');
+	}
+
 	public function klasifikasi()
 	{
 		$this->load->view('Home/klasifikasi');
@@ -26,7 +31,7 @@ class Home extends CI_Controller {
 
 		if($this->form_validation->run() == FALSE)
 		{
-			$this->load->view('Home/index');
+			$this->load->view('Home/klasifikasi');
 		}
 		else
 		{
@@ -50,11 +55,11 @@ class Home extends CI_Controller {
 			$data = $this->session->userdata('klasifikasi');
 			$data = array('data' => $data);
 			$this->load->view('Home/hasil', $data);
-			// $this->session->sess_destroy();
+			$this->session->sess_destroy();
 		}
 		else
 		{
-			echo "u sapa?";
+			redirect(base_url("/klasifikasi"));
 		}
 	}
 
@@ -72,6 +77,6 @@ class Home extends CI_Controller {
 
 	public function test2()
 	{
-		
+		$blocked = array('anal', 'ass', 'ass hole', 'asshole', 'aseksual', 'biseksual', 'banci', 'bencong', 'bugil', 'blonde', 'bitch', 'cump', 'coli', 'coly', 'dildo', 'fuck', 'fucking', 'gay', 'gigolo', 'get the fuck', 'gtfo', 'homo', 'horny', 'horni', 'itil', 'jalang', 'jablay', 'jembut', 'kontol', 'kentu', 'kenthu', 'kimcil', 'lesbi', 'lonte', 'lonthe', 'loli', 'loly', 'maho', 'memek', 'motherfucker', 'mother fucker', 'ngaceng', 'ngentot', 'ngewe', 'ngocok', 'onani', 'orgasme', 'pejuh', 'peju', 'peli', 'pentil', 'pelacur', 'porno', 'porn', 'pussy', 'seks', 'sex', 'shit', 'shut the fuck up', 'stfu', 'telanjang', 'tete', 'tetek', 'tempik', 'what the fuck', 'what the hell', 'wtf');
 	}
 }
