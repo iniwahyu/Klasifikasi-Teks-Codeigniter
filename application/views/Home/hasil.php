@@ -16,7 +16,7 @@
       <!-- Main content -->
       <section class="content">
         <!-- HASIL DALAM TABEL -->
-        <div class="col-xs-12">
+        <div class="col-md-12">
           <div class="box box-solid box-primary">
             <div class="box-header">
               <h3 class="box-title">Ditemukan Hasil</h3>

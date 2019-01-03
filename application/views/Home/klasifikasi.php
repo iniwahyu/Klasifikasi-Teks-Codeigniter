@@ -17,7 +17,7 @@
       <section class="content">
         <div class="alert bg-light-blue">
             <h4>Klasifikasi Kata Pornografi</h4>
-            Untuk menggunakan <b>Klasifikasi Kata Pornografi</b>, mohon salin artikel yang ingin diambil lalu tempel ke dalam form yang sudah tersedia. Pilih tombol <b>Submit</b> untuk melakukan pengecekan apakah artikel yang dipilih <b>LAYAK</b> atau <b class="text-black">TIDAK LAYAK</b>.
+            Untuk menggunakan <b>Klasifikasi Kata Pornografi</b>, mohon salin artikel yang ingin diambil lalu tempel ke dalam form yang sudah tersedia. Pilih tombol <b>Submit</b> untuk melakukan pengecekan apakah artikel tersebut <b>LAYAK</b> atau <b class="text-black">TIDAK LAYAK</b>.
         </div>
         <div class="box box-primary box-solid">
           <div class="box-header">

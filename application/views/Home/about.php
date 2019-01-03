@@ -16,7 +16,7 @@
       <!-- Main content -->
       <section class="content">        
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-md-12">
                 <div class="alert alert-danger">
                     <h4>About</h4>
                     CekKlas adalah Sebuah sarana yang membantu untuk para pembaca untuk mengecek apakah pantas artikel yang dibaca tersebut pantas atau tidak. Karena, kami sangat khawatir dengan banyaknya artikel-artikel yang kurang baik, lalu anak-anak yang masih dibawah umur terkena ancaman bahaya tersebut.
