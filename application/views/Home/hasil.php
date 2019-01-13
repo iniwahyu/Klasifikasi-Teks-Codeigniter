@@ -97,6 +97,7 @@
                 <div class="box-body">
                     <p>
                       <?php 
+                      $blocked = array('anal', 'ass', 'ass hole', 'asshole', 'aseksual', 'biseksual', 'banci', 'bencong', 'bugil', 'blonde', 'bitch', 'cump', 'coli', 'coly', 'dildo', 'fuck', 'fucking', 'gay', 'gigolo', 'get the fuck', 'gtfo', 'homo', 'horny', 'horni', 'itil', 'jalang', 'jablay', 'jembut', 'kontol', 'kentu', 'kenthu', 'kimcil', 'lesbi', 'lonte', 'lonthe', 'loli', 'loly', 'maho', 'memek', 'masturbasi', 'mendesah', 'motherfucker', 'mother fucker', 'ngaceng', 'ngentot', 'ngewe', 'ngocok', 'onani', 'orgasme', 'pejuh', 'peju', 'peli', 'pentil', 'pelacur', 'porno', 'porn', 'pussy', 'seks', 'sex', 'shit', 'shut the fuck up', 'stfu', 'telanjang', 'tete', 'tetek', 'tempik', 'what the fuck', 'what the hell', 'wtf');
                       $hasil = $data;
                       $matched = preg_match_all("/(".implode('|', $blocked).")/i", $hasil, $matches);
                       $filter = preg_replace("/(".implode('|', $blocked).")/i", '<span style="color: red;">***</span>', $hasil);
